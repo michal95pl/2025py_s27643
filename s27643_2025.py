@@ -66,6 +66,7 @@ def main():
     # Wyświetlanie wyników
     print(f"\nSekwencja została zapisana do pliku {file_name}")
     print("Statystyki sekwencji:")
+    # dla każdego nukleotydu A, C, G, T wyświetla jego procentowy udział w sekwencji
     for nuc in 'ACGT':
         print(f"{nuc}: {stats[nuc]:.1f}%")
     print(f"%CG: {cg_percent:.1f}")
